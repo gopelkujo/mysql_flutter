@@ -3,6 +3,7 @@
 - Fork project from https://github.com/zim32/mysql.dart
 - Change package settings [#1](https://github.com/gopelkujo/mysql_flutter/pull/1)
 - Upgrade dependencies [#2](https://github.com/gopelkujo/mysql_flutter/pull/2)
+- Update readme.md [#3](https://github.com/gopelkujo/mysql_flutter/pull/4)
 
 <br />
 
