@@ -190,4 +190,3 @@ Inside your catch block, you can check connection status using **conn.connected*
 
 - [ ] Todo create logging branch to trace error log.
 
-Don't forget to switch back again, when you're done with debugging.
