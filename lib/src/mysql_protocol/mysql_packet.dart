@@ -316,25 +316,25 @@ class MySQLPacket {
   }
 
   bool isOkPacket() {
-    final _payload = payload;
+    final payload = this.payload;
 
-    return _payload is MySQLPacketOK;
+    return payload is MySQLPacketOK;
   }
 
   bool isErrorPacket() {
-    final _payload = payload;
-    return _payload is MySQLPacketError;
+    final payload = this.payload;
+    return payload is MySQLPacketError;
   }
 
   bool isEOFPacket() {
-    final _payload = payload;
+    final payload = this.payload;
 
-    if (_payload is MySQLPacketEOF) {
+    if (payload is MySQLPacketEOF) {
       return true;
     }
 
-    return _payload is MySQLPacketOK &&
-        _payload.header == 0xfe &&
+    return payload is MySQLPacketOK &&
+        payload.header == 0xfe &&
         payloadLength < 9;
   }
 

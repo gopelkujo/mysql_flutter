@@ -672,13 +672,13 @@ class MySQLConnection {
       if (param.value == null) {
         value = "NULL";
       } else if (param.value is String) {
-        value = "'" + _escapeString(param.value) + "'";
+        value = "'${_escapeString(param.value)}'";
       } else if (param.value is num) {
         value = param.value.toString();
       } else if (param.value is bool) {
         value = param.value ? "TRUE" : "FALSE";
       } else {
-        value = "'" + _escapeString(param.value.toString()) + "'";
+        value = "'${_escapeString(param.value.toString())}'";
       }
 
       convertedParams[param.key] = value;
@@ -1237,10 +1237,10 @@ class ResultSet extends IResultSet {
 
   @override
   Iterable<ResultSetRow> get rows sync* {
-    for (final _row in _resultSetPacket.rows) {
+    for (final row in _resultSetPacket.rows) {
       yield ResultSetRow._(
         colDefs: _resultSetPacket.columns,
-        values: _row.values,
+        values: row.values,
       );
     }
   }
@@ -1344,10 +1344,10 @@ class PreparedStmtResultSet extends IResultSet {
 
   @override
   Iterable<ResultSetRow> get rows sync* {
-    for (final _row in _resultSetPacket.rows) {
+    for (final row in _resultSetPacket.rows) {
       yield ResultSetRow._(
         colDefs: _resultSetPacket.columns,
-        values: _row.values,
+        values: row.values,
       );
     }
   }
