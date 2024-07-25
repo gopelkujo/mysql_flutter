@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'dart:typed_data';
-import 'package:mysql_client/mysql_protocol.dart';
-import 'package:mysql_client/mysql_protocol_extension.dart';
+import 'package:mysql_flutter/mysql_protocol.dart';
+import 'package:mysql_flutter/mysql_protocol_extension.dart';
 
 class MySQLPacketInitialHandshake extends MySQLPacketPayload {
   int protocolVersion;

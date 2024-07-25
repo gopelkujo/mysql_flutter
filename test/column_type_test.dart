@@ -1,4 +1,4 @@
-import 'package:mysql_client/mysql_protocol.dart';
+import 'package:mysql_flutter/mysql_protocol.dart';
 import 'package:test/test.dart';
 
 void main() {

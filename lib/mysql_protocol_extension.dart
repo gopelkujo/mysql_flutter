@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 import 'package:buffer/buffer.dart';
-import 'package:mysql_client/exception.dart';
+import 'package:mysql_flutter/exception.dart';
 import 'package:tuple/tuple.dart';
 
 extension MySQLUint8ListExtension on Uint8List {

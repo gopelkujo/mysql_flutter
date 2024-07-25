@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:mysql_client/mysql_client.dart';
+import 'package:mysql_flutter/mysql_client.dart';
 
 /// Class to create and manage pool of database connections
 class MySQLConnectionPool {
