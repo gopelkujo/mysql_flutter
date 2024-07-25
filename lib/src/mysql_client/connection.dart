@@ -3,8 +3,8 @@ import 'dart:collection';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:mysql_client/mysql_protocol.dart';
-import 'package:mysql_client/exception.dart';
+import 'package:mysql_flutter/mysql_protocol.dart';
+import 'package:mysql_flutter/exception.dart';
 
 enum _MySQLConnectionState {
   fresh,
